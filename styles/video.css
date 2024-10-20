@@ -1,0 +1,64 @@
+.layout {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    column-gap: 16px;
+    row-gap: 27px;
+}
+
+
+.channel-pic {
+    width: 36px;
+    border-radius: 25px;
+}
+
+.thumbnail {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 43px 1fr;
+    column-gap: 8px;
+}
+
+.pic1, .pic2 {
+    width: 100%;
+}
+
+.Title {
+    font-weight: 600;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    line-height: 18px;
+}
+
+.creator {
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: gray;
+}
+
+.views {
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: gray;
+}
+
+.time {
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+}

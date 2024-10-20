@@ -1,0 +1,170 @@
+.header {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(169, 167, 167);
+    z-index: 100;
+}
+
+.left-section {
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu {
+    height: 20px;
+    margin-right: 24px;
+    margin-left: 24px;
+    size: 24px;
+}
+
+.youtube-logo {
+    height: 20px;
+}
+
+.middle-section {
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 470px;
+    display: flex;
+    align-items: center;
+}
+
+.voice-button {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+}
+
+.search-button,
+.voice-button,
+.upload-container,
+.apps,
+.fin {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-button {
+    position: relative;
+    height: 39px;
+    width: 66px;
+    background-color: rgb(246, 242, 242);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(197, 197, 197);
+    margin-left: -1px;
+    margin-right: 10px;
+}
+
+.search-button .tooltip,
+.voice-button .tooltip,
+.upload-container .tooltip,
+.apps .tooltip,
+.fin .tooltip {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+    color: white;
+    padding: 4px 8px 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip,
+.upload-container:hover .tooltip,
+.apps:hover .tooltip,
+.fin:hover .tooltip {
+    opacity: 1;
+}
+
+.Search-Box {
+    flex: 1;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(197, 197, 197);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width: 0;
+}
+
+.Search-Box::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.vc {
+    height: 24px;
+    background-color: rgb(236, 232, 232);
+}
+
+.sb {
+    height: 25px;
+}
+
+.right-section {
+    width: 230px;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 10px;
+    flex-shrink: 0;
+} 
+
+.upload {
+    height: 24px;
+}
+
+.yt {
+    height: 24px;
+}
+
+.fin {
+    position: relative;
+}
+
+.not {
+    height: 24px;
+}
+
+.cnt {
+    background-color: rgb(194, 39, 39);
+    position: absolute;
+    top: -3px;
+    right: -4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: white;
+    font-weight: 400;
+    padding: 2px 5px 2px 5px;
+    border-radius: 10px;
+}
+
+.my {
+    height: 32px;
+}

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/general.css" class="rel">
+    <link rel="stylesheet" href="styles/header.css" class="rel">
+    <link rel="stylesheet" href="styles/video.css" class="rel">
+    <link rel="stylesheet" href="styles/sidebar.css" class="rel">
+</head>
+<body>
+    
+    <!-- to make nested vertical layouts, simple create two divs for two vertical layouts next to each other -->
+
+    <!-- to create a horizontal layout, create two divs, and make them inline-block elements -->
+
+    <!-- but what is the problem with "display: inline-block" property?? You will definitely face some alignment issues, and it doesn't align the elements properly -->
+    
+    <!-- Hence we use CSS GRID -->
+    <div class="header">
+        <div class="left-section">
+            <img src="public/icons/hamburger-menu.svg" class="hamburger-menu">
+            <img src="public/icons/youtube-logo.svg" class="youtube-logo">
+        </div>
+        <div class="middle-section">
+            <input type="text" placeholder="Search" class="Search-Box">
+            <button class="search-button">
+                <img src="public/icons/search.svg" class="sb">
+                <div class="tooltip">Search</div>
+            </button>
+            <button class="voice-button">
+                <img src="public/icons/voice-search-icon.svg" class="vc">
+                <div class="tooltip">Search with your voice</div>
+            </button>
+        </div>
+        <div class="right-section">
+            <div class="upload-container">
+                <img src="public/icons/upload.svg" class="upload">
+                <div class="tooltip">Create</div>
+            </div>
+            <div class="apps">
+                <img src="public/icons/youtube-apps.svg" class="yt">
+                <div class="tooltip">notifications</div>
+            </div>
+            <div class="fin">
+                <img src="public/icons/notifications.svg" class="not">
+                <div class="tooltip">Youtube Apps</div>
+                <div class="cnt">3</div>
+            </div>
+            <img src="public/channel/my-channel.jpeg" class="my" style="cursor: pointer">
+        </div>
+    </div>
+
+    <div class="Sidebar">
+        <div class="box">
+            <img src="public/icons/home.svg" class="home">
+            <div>Home</div>
+        </div>
+        <div class="box">
+            <img src="public/icons/explore.svg" class="explore">
+            <div>Explore</div>
+        </div>
+        <div class="box">
+            <img src="public/icons/subscriptions.svg" class="subscriptions">
+            <div>Subscriptions</div>
+        </div>
+        <div class="box">
+            <img src="public/icons/originals.svg" class="originals">
+            <div>Originals</div>
+        </div>
+        <div class="box">
+            <img src="public/icons/youtube-music.svg" class="music">
+            <div>Youtube Music</div>
+        </div>
+        <div class="box">
+            <img src="public/icons/library.svg" class="library">
+            <div>Library</div>
+        </div>
+    </div>
+
+    <div class="layout">
+        <div class="video">
+            <div class="preview">
+                <div class="thumbnail">
+                    <!-- first vertical layout -->
+                    <img src="public/thumbnail-1.webp" class="pic1">
+                    <div class="time">14:20</div>
+                </div>
+                <div class="info">
+                    <!-- second vertical layout -->
+                    <div>
+                        <!-- first horizontal layout -->
+                        <img src="public/channel/channel-1.jpeg" class="channel-pic">
+                    </div>
+                    <div>
+                        <!-- second horizontal layout -->
+                        <p class="Title">
+                            Talking Tech and AI with Google CEO Sundar Pichai!
+                        </p>
+                        <p class="creator">
+                            Marques Brownlee
+                        </p>
+                        <p class="views">
+                            3.4M views · 6 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="video">
+            <div class="preview">
+                <div class="thumbnail">
+                    <!-- first vertical layout -->
+                    <img src="public/thumbnail-2.webp" class="pic2">
+                    <div class="time">8:22</div>
+                </div>
+                <div class="info">
+                    <!-- second vertical layout -->
+                    <div>
+                        <!-- first horizontal layout -->
+                        <img src="public/channel/channel-2.jpeg" class="channel-pic">
+                    </div>
+                    <div>
+                        <!-- second horizontal layout -->
+                        <p class="Title">
+                            Try Not To Laugh Challenge #9
+                        </p>
+                        <p class="creator">
+                            Markiplier
+                        </p>
+                        <p class="views">
+                            19M views · 4 years ago
+                        </p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="video">
+            <div class="preview">
+                <div class="thumbnail">
+                    <!-- first vertical layout -->
+                    <img src="public/thumbnail-3.webp" class="pic1">
+                    <div class="time">9:13</div>
+                </div>
+                <div class="info">
+                    <!-- second vertical layout -->
+                    <div>
+                        <!-- first horizontal layout -->
+                        <img src="public/channel/channel-3.jpeg" class="channel-pic">
+                    </div>
+                    <div>
+                        <!-- second horizontal layout -->
+                        <p class="Title">
+                            Crazy Tik Toks Taken Moments Before DISASTER
+                        </p>
+                        <p class="creator">
+                            SSSniperWolf
+                        </p>
+                        <p class="views">
+                            12M views · 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="video">
+            <div class="preview">
+                <div class="thumbnail">
+                    <!-- first vertical layout -->
+                    <img src="public/thumbnail-4.webp" class="pic2">
+                    <div class="time">22:09</div>
+                </div>
+                <div class="info">
+                    <!-- second vertical layout -->
+                    <div>
+                        <!-- first horizontal layout -->
+                        <img src="public/channel/channel-4.jpeg" class="channel-pic">
+                    </div>
+                    <div>
+                        <!-- second horizontal layout -->
+                        <p class="Title">
+                            The Simplest Math Problem No One Can Solve - Collatz Conjecture
+                        </p>
+                        <p class="creator">
+                            Veritasium  
+                        </p>
+                        <p class="views">
+                            18M views · 4 months ago
+                        </p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="video">
+            <div class="preview">
+                <div class="thumbnail">
+                    <!-- first vertical layout -->
+                    <img src="public/thumbnail-5.webp" class="pic1">
+                    <div class="time">11:17</div>
+                </div>
+                <div class="info">
+                    <!-- second vertical layout -->
+                    <div>
+                        <!-- first horizontal layout -->
+                        <img src="public/channel/channel-5.jpeg" class="channel-pic">
+                    </div>
+                    <div>
+                        <!-- second horizontal layout -->
+                        <p class="Title">
+                            Kadane's Algorithm to Maximum Sum Subarray Problem
+                        </p>
+                        <p class="creator">
+                            CS Dojo
+                        </p>
+                        <p class="views">
+                            519K views · 5 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="video">
+            <div class="preview">
+                <div class="thumbnail">
+                    <!-- first vertical layout -->
+                    <img src="public/thumbnail-6.webp" class="pic2">
+                    <div class="time">19:59</div>
+                </div>
+                <div class="info">
+                    <!-- second vertical layout -->
+                    <div>
+                        <!-- first horizontal layout -->
+                        <img src="public/channel/channel-6.jpeg" class="channel-pic">
+                    </div>
+                    <div>
+                        <!-- second horizontal layout -->
+                        <p class="Title">
+                            Anything You Can Fit In The Circle I’ll Pay For
+                        </p>
+                        <p class="creator">
+                            MrBeast
+                        </p>
+                        <p class="views">
+                            141M views · 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="video">
+            <div class="preview">
+                <div class="thumbnail">
+                    <!-- first vertical layout -->
+                    <img src="public/thumbnail-7.webp" class="pic1">
+                    <div class="time">10:13</div>
+                </div>
+                <div class="info">
+                    <!-- second vertical layout -->
+                    <div>
+                        <!-- first horizontal layout -->
+                        <img src="public/channel/channel-7.jpeg" class="channel-pic">
+                    </div>
+                    <div>
+                        <!-- second horizontal layout -->
+                        <p class="Title">
+                            Kadane's Algorithm to Maximum Sum Subarray Problem
+                        </p>
+                        <p class="creator">
+                            CS Dojo
+                        </p>
+                        <p class="views">
+                            519K views · 5 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="video">
+            <div class="preview">
+                <div class="thumbnail">
+                    <!-- first vertical layout -->
+                    <img src="public/thumbnail-8.webp" class="pic2">
+                    <div class="time">7:12</div>
+                </div>
+                <div class="info">
+                    <!-- second vertical layout -->
+                    <div>
+                        <!-- first horizontal layout -->
+                        <img src="public/channel/channel-8.jpeg" class="channel-pic">
+                    </div>
+                    <div>
+                        <!-- second horizontal layout -->
+                        <p class="Title">
+                            Anything You Can Fit In The Circle I’ll Pay For
+                        </p>
+                        <p class="creator">
+                            MrBeast
+                        </p>
+                        <p class="views">
+                            141M views · 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+    </div>
+    
+</body>
+</html>
